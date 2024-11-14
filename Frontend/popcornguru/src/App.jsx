@@ -27,6 +27,9 @@ function App() {
         height="300px"
         alt="Popcorn"
       />
+      <br />
+            <button>Explore</button>
+
       <h4>
         Welcome to PopcornGuru! <br />
         Your ultimate AI companion for personalized movie recommendations. <br />
@@ -34,6 +37,7 @@ function App() {
         list of films that will make your next movie night unforgettable. <br />
         Get ready to discover your perfect watch, handpicked just for you!
       </h4>
+      
       <div>
         <label>
           Genre:
