@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 function MainPage() {
   const [genre, setGenre] = useState('');
   const [language, setLanguage] = useState('');
-const{next}=useNavigate();
+const navigate=useNavigate();
   const [movies, setMovies] = useState([]);
 
   const getRecommendations = async () => {
@@ -30,7 +30,7 @@ const{next}=useNavigate();
         alt="Popcorn"
       />
       <br />
-            <button onClick={()=>{next("/login")}}>Login</button>
+            <button onClick={()=>{navigate("/login")}}>Login</button>
 
       <h4>
         Welcome to PopcornGuru! <br />

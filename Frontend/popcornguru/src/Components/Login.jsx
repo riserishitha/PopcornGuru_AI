@@ -3,6 +3,8 @@ function Login(){
         <div>
             <input type="text" placeholder="username" />
             <input type="password" placeholder="Password"/>
+            <br />
+            <button>Login</button>
         </div>
     )
 
