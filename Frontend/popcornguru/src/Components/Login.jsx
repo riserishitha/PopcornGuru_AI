@@ -17,12 +17,6 @@ function Login() {
                     <label htmlFor="email">Email</label>
                     <input type="email" id="email" placeholder="Enter your email" />
                 </div>
-
-                <div className="input-group">
-                    <label htmlFor="phone">Phone Number</label>
-                    <input type="tel" id="phone" placeholder="Enter your phone number" />
-                </div>
-
                 <button className="login-button" type="submit">Login</button>
             </form>
         </div>
