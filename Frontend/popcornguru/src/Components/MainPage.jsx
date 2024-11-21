@@ -23,15 +23,10 @@ const navigate=useNavigate();
   return (
     <>
       <h1>POPCORNGURU - AI🍿</h1>
-      <img
-        src="https://compote.slate.com/images/b6fcede3-4025-454e-b32c-e722afdf1ba1.jpg"
-        height="300px"
-        alt="Popcorn"
-      />
       <br />
             <button onClick={()=>{navigate("/login")}}>Login</button>
 
-      <h4>
+      <h4 className='bg-green-800 h-100'>
         Welcome to PopcornGuru! <br />
         Your ultimate AI companion for personalized movie recommendations. <br />
         Simply select your preferred genre and language, and I will whip up a
