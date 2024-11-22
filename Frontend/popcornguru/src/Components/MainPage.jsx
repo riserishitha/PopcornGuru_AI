@@ -22,36 +22,36 @@ const navigate=useNavigate();
 
   return (
     <>
-      <h1>POPCORNGURU - AI🍿</h1>
-      <br />
-            <button onClick={()=>{navigate("/login")}}>Login</button>
+    <div className='bg-blue-400 p-5'>
+    <button onClick={()=>{navigate("/login")}}>Login</button>
+    </div>
 
-      <h4 className='bg-green-800 h-100'>
+      <div className='mt-5 mb-5 border-blue-400 rounded-3xl border-2 justify-self-center p-2'>
         Welcome to PopcornGuru! <br />
         Your ultimate AI companion for personalized movie recommendations. <br />
         Simply select your preferred genre and language, and I will whip up a
         list of films that will make your next movie night unforgettable. <br />
         Get ready to discover your perfect watch, handpicked just for you!
-      </h4>
+      </div>
       
-      <div>
-        <label>
-          Genre:
+      <div className='justify-self-center'>
           <input
             type="text"
             value={genre}
             onChange={(e) => setGenre(e.target.value)}
+            className='mb-5 border-blue-400 rounded-3xl border-2 p-2'
+            placeholder='Genre'
           />
-        </label>
-        <label>
-          Language:
+          <br />
           <input
             type="text"
             value={language}
             onChange={(e) => setLanguage(e.target.value)}
+            className='mb-5 border-blue-400 rounded-3xl border-2 p-2'
+            placeholder='Language'
           />
-        </label>
-        <button onClick={getRecommendations}>Get Recommendations</button>
+          <br />
+        <button onClick={getRecommendations} className='border-blue-400 rounded-3xl border-2 p-2 justify-self-center bg-blue-400 text-white'>Get Recommendations</button>
       </div>
       <h2>Movie Recommendations:</h2>
       <ul>
